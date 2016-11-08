@@ -1,0 +1,5 @@
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\Engine\bin\Release\Engine.dll
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\Engine\bin\Release\Engine.pdb
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\Engine\obj\Release\Engine.csprojResolveAssemblyReference.cache
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\Engine\obj\Release\Engine.dll
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\Engine\obj\Release\Engine.pdb
