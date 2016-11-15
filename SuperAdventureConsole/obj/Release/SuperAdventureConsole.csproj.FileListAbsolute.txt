@@ -6,3 +6,11 @@ C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\ConsoleAppli
 C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\ConsoleApplication1\obj\Release\SuperAdventureConsole.csprojResolveAssemblyReference.cache
 C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
 C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\bin\Release\ConsoleApplication1.exe.config
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\obj\Release\ConsoleApplication1.exe
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\obj\Release\ConsoleApplication1.pdb
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\bin\Release\ConsoleApplication1.exe
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\bin\Release\ConsoleApplication1.pdb
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\bin\Release\Engine.dll
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\bin\Release\Engine.pdb
+C:\Users\RickK\Documents\Visual Studio 2013\Projects\SuperAdventure\SuperAdventureConsole\obj\Release\SuperAdventureConsole.csprojResolveAssemblyReference.cache
