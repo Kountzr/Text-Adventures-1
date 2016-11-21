@@ -40,8 +40,50 @@ namespace Engine
          public const int LOCATION_ID_FARMHOUSE = 6; 
          public const int LOCATION_ID_FARM_FIELD = 7; 
          public const int LOCATION_ID_BRIDGE = 8; 
-         public const int LOCATION_ID_SPIDER_FIELD = 9; 
- 
+         public const int LOCATION_ID_SPIDER_FIELD = 9;
+         public const int LOCATION_ID_IKOLA_VILLAGE_GATE = 10;
+         public const int LOCATION_ID_IKOLA_TOWN_SQUARE = 11;
+         public const int LOCATION_ID_FURS_AND_FINS = 12;
+         public const int LOCATION_ID_BAKERY = 13;
+         public const int LOCATION_ID_BLACKSMITH = 14;
+         public const int LOCATION_ID_OUTPOST = 15;
+         public const int LOCATION_ID_APOTHECARY = 16;
+         public const int LOCATION_ID_INN = 17;
+         public const int LOCATION_ID_SAFE_HOUSE = 18;
+         public const int LOCATION_ID_MAYOR_HOUSE = 19;
+         public const int LOCATION_ID_HOUSE1 = 20;
+         public const int LOCATION_ID_HOUSE2 = 21;
+         public const int LOCATION_ID_HOUSE3 = 22;
+         public const int LOCATION_ID_HOUSE4 = 23;
+         public const int LOCATION_ID_HOUSE5 = 24;
+         public const int LOCATION_ID_HOUSE6 = 25;
+         public const int LOCATION_ID_CAPTAINS_HOUSE = 26;
+         public const int LOCATION_ID_BEACH_ROAD = 27;
+         public const int LOCATION_ID_YAMI_PIER = 28;
+         public const int LOCATION_ID_THE_DOCKS = 29;
+         public const int LOCATION_ID_OLD_SHIP = 30;
+         public const int LOCATION_ID_OS_CABIN = 31;
+         public const int LOCATION_ID_THE_GARRISON = 32;
+         public const int LOCATION_ID_FISHING_VESSEL = 33;
+         public const int LOCATION_ID_BUNGULO = 34;
+         public const int LOCATION_ID_LIGHTHOUSE = 35;
+         public const int LOCATION_ID_NORTH_MARSH_ROAD = 36;
+         public const int LOCATION_ID_THE_MARSHES = 37;
+         public const int LOCATION_ID_OLD_HAGS_HUT = 38;
+         public const int LOCATION_ID_IKOLA_CEMETARY = 39;
+         public const int LOCATION_ID_INFINITY_CAVE = 40;
+         public const int LOCATION_ID_THE_TOMB = 41;
+         public const int LOCATION_ID_MARSH_TOWN_ROAD = 42;
+         public const int LOCATION_ID_The_Hilltop = 43;
+         public const int LOCATION_ID_IKOLA_TEMPLE = 44;
+         public const int LOCATION_ID_FARM_ROAD = 45;
+         public const int LOCATION_ID_OLD_FARMHOUSE = 46;
+         public const int LOCATION_ID_THE_BARN = 47;
+         public const int LOCATION_ID_FREMAS_FARM = 48;
+         public const int LOCATION_ID_YAMI_WOODS = 49;
+         public const int LOCATION_ID_ZERMOS_DEN = 50;
+         public const int LOCATION_ID_CAVE_OF_THE_OLD_ONE = 51;
+         public const int LOCATION_ID_THE_GROVE = 52;
  
          static World() 
          { 
@@ -160,8 +202,17 @@ namespace Engine
  
  
              Location spiderField = new Location(LOCATION_ID_SPIDER_FIELD, "Forest", "You see spider webs covering covering the trees in this forest."); 
-             spiderField.MonsterLivingHere = MonsterByID(MONSTER_ID_GIANT_SPIDER); 
- 
+             spiderField.MonsterLivingHere = MonsterByID(MONSTER_ID_GIANT_SPIDER);
+
+             Location ikolaVillage = new Location(LOCATION_ID_IKOLA_VILLAGE_GATE, "Ikola Village Gate", "You arrive at the neighboring town of Ikola.");
+
+             Location ikolaSquare = new Location(LOCATION_ID_IKOLA_TOWN_SQUARE, "Ikola Town Square", "You arrived in Ikola Town square. It is filled with merchant shops and busy residents.");
+
+             Location finsAndFur = new Location(LOCATION_ID_FURS_AND_FINS, "Furs and Fins Trade Post", "You entered a trading post the specializes in clothing and gear. A burly man with a mighty beard stares at you as you enter.");
+
+             Location bakery = new Location(LOCATION_ID_BAKERY, "Ikola Bakery", "You entered the local bakery. The smell of freshly baked goods is pleasing.");
+
+             Location blackSmith = new Location(LOCATION_ID_BLACKSMITH, "Ikola Blacksmith", "The blacksmith's shop is fiercely hot and filled with the sound of clanging metal.");
  
              // Link the locations together 
              home.LocationToNorth = townSquare; 
@@ -195,8 +246,17 @@ namespace Engine
              bridge.LocationToEast = spiderField; 
  
  
-             spiderField.LocationToWest = bridge; 
- 
+             spiderField.LocationToWest = bridge;
+             spiderField.LocationToEast = ikolaVillage;
+
+             ikolaVillage.LocationToWest = spiderField;
+             ikolaVillage.LocationToEast = ikolaSquare;
+             
+             ikolaSquare.LocationToNorth = finsAndFur;
+             ikolaSquare.LocationToSouth = bakery;
+
+             bakery.LocationToNorth = ikolaSquare;
+             finsAndFur.LocationToSouth = ikolaSquare;
  
              // Add the locations to the static list 
              Locations.Add(home); 
@@ -207,7 +267,11 @@ namespace Engine
              Locations.Add(farmhouse); 
              Locations.Add(farmersField); 
              Locations.Add(bridge); 
-             Locations.Add(spiderField); 
+             Locations.Add(spiderField);
+             Locations.Add(ikolaVillage);
+             Locations.Add(ikolaSquare);
+             Locations.Add(finsAndFur);
+             Locations.Add(bakery);
          } 
  
  
